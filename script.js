@@ -23,14 +23,18 @@ class Ball {
     ctx.fill();
   }
   update() {
+    if (this.x - this.size < 0 || this.x + this.size > canvas.width) {
+      this.xVelocity *= -1;
+    }
+    if (this.y - this.size < 0 || this.y + this.size > canvas.height) {
+      this.yVelocity *= -1;
+    }
     this.x += this.xVelocity;
     this.y += this.yVelocity;
-    // if (this.x - this.size < 0 || this.x + this.size > canvas.width) {
-    //   this.xVelocity *= -1;
-    // }
-    // if (this.y - this.size < 0 || this.y + this.size > canvas.height) {
-    //   this.yVelocity *= -1;
-    // }
+
+    if (this.y + this.size <= canvas.height) {
+      this.yVelocity += 0.5;
+    }
   }
 }
 
