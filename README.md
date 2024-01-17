@@ -10,4 +10,5 @@ Demo site is hosted on : https://susanta96.github.io/Canvas-Pracice/
 2. Need Live Server Extension
 3. Good to go.
 
-
+If you want to help me, please download the [Venom Theme](https://marketplace.visualstudio.com/items?itemName=susanta96.venom-theme-vscode) for VSCode & use it for couple of days. Let me know your feedback as well. 
+React out to me on: [Email](mailto:s.chakraborty@skiff.com)
